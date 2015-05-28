@@ -1,0 +1,19 @@
+{
+  "name": "PrintTheLove",
+  "version": "1.0.0",
+  "homepage": "http://PrintTheLove.org",
+  "authors": [
+    "Ansel Santosa <ansel@anselsantosa.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bourbon": "~4.0.2",
+    "components-font-awesome": "~4.2.0",
+    "normalize.css": "~3.0.2"
+  }
+}
