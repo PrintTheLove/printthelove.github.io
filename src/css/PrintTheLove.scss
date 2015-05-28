@@ -1,5 +1,16 @@
 @import '../../bower_components/bourbon/dist/_bourbon';
 
+@font-face {
+    font-family: BebasNeue;
+    src: url('font/BebasNeueRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: BebasNeue;
+    font-weight: bold;
+    src: url('font/BebasNeueBold.otf') format('opentype');
+}
+
 * { @include box-sizing(border-box); }
 
 html {
@@ -35,4 +46,9 @@ body {
  */
 .u-clearfix {
     *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: BebasNeue;
+    text-transform: uppercase;
 }

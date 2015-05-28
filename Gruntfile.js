@@ -16,21 +16,12 @@ module.exports = function(grunt) {
         },
         clean: [
             'favicon.ico',
-            '*.html',
-            '-google*',
-            '*.css',
-            '*.js',
+            'index.html',
+            'PrintTheLove*.css',
+            'PrintTheLove*.js',
             'img'
         ],
         copy: {
-            constants: {
-                files: [{
-                    expand: true,
-                    flatten: true,
-                    src: 'src/Constants.js',
-                    dest: 'build/'
-                }]
-            },
             favicon: {
                 files: [{
                     expand: true,
@@ -58,12 +49,6 @@ module.exports = function(grunt) {
             css:    { src: '*.css' }
         },
         jade: {
-            options: {
-                data: function() {
-                    return require('./build/Constants');
-                },
-                pretty: true
-            },
             index: {
                 files: {
                     'index.html': 'src/index.jade'
