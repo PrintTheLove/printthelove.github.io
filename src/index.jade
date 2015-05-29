@@ -11,58 +11,78 @@ html(lang="en")
 
         // build:css PrintTheLove.min.css
         link(rel="stylesheet", href="bower_components/normalize.css/normalize.css")
+        link(rel="stylesheet", href="bower_components/components-font-awesome/css/font-awesome.css")
         link(rel="stylesheet", href="PrintTheLove.css")
         // endbuild
 
-    body
-        article.c-screen.c-screen--title
-            img(src='img/PrintTheLove.gif')
+    body.u-clearfix
 
-        article.c-screen.c-screen--about
-            header.c-screen__header
+        //-nav.c-nav
+            //-ul.c-nav__list
+                //-li.c-nav__list__item(data-target='title') Home
+                //-li.c-nav__list__item(data-target='about') Print the Love
+                //-li.c-nav__list__item(data-target='story') The Story
+                //-li.c-nav__list__item(data-target='gift') A Gift
+                //-li.c-nav__list__item(data-target='support') Your Support
+                //-li.c-nav__list__item(data-target='donate') Donate
+                //-li.c-nav__list__item(data-target='contact') Contact
+
+        article.c-screen.u-clearfix.c-screen--title
+            img.c-logo(src='img/PrintTheLove.gif')
+            i.fa.fa-4x.fa-arrow-down.c-next
+
+        article.c-screen.u-clearfix.c-screen--about
+            header
                 h1 Print the Love
-                p.c-screen__header__description Love Polaroids is about more than just giving away a photograph. It is about hope, love, and encouragement. It is about uplifting others, helping them see the beauty in themselves regardless of their circumstance.
+                p Love Polaroids is about more than just giving away a photograph. It is about hope, love, and encouragement. It is about uplifting others, helping them see the beauty in themselves regardless of their circumstance.
 
-            section
+            section.c-left
                 h3 The Impact
                 p The impact of Love Polaroids is felt by across people groups, ages, races, cultures and languages. To be able to print on the spot within seconds with Polaroid products, it opens up the doors to serve those who normally wouldn’t be able to receive such a gift. In order to maximize impact, Love Polaroids hosts expeditions for those who want to particpate in the cause first hand.
                 p “I wish I could bottle up the joy that Love Polaroids gives to everyone who received or gave a photo for you to feel it too. It is like joy exploding! It stays with you forever and I wish everyone on earth could feel it.” - Ceallaigh Anderson
 
-            section
+            section.c-right
                 h3 The Vision
                 p It is Love Polaroids vision to see every person on earth feel loved, valued, and celebrated even amidst life’s most difficult trials. That all would have access to photographs of family, friends, and life’s most cherished memories and milestones.
 
-            section
+            section.c-right
                 h3 The Mission
                 p To celebrate the value and dignity of individuals in under-resourced communities through the gift of a Love Polaroid.
 
-            aside
-                section
-                    img.c-img--circle(src='img/about_children.jpg')
+            aside.u-clearfix
+                section.c-left
+                    div.c-img--circle
+                        img(src='img/about_children.jpg')
                     h5 Children
                         span Served
                     p Children in many under-resourced communities are marginalized and often not celebrated for who they are. We want to change that! Self-worth is important for emotional and social development. Very few children get school photos taken or have any record of their childhood. As well, if a child were to be lost or taken, there would be a photograph to help find him or her.
-                section
-                    img.c-img--circle(src='img/about_relief.jpg')
-                    h5 Relief Efforts
-                        span Supported
-                    p Many Individuals who have been through natural disasters or war have lost everything, including personal belonging and family treasures. Love Polaroids is able to help them rebuild emotionally by giving them new keepsakes.
-                section
-                    img.c-img--circle(src='img/about_hospitalized.jpg')
+                section.c-right
+                    div.c-img--circle
+                        img(src='img/about_hospitalized.jpg')
                     h5 Hospitalized
                         span Encouraged
                     p New mothers in maternity wards around the globe rarely have access to photographs of their newborns and this lifechanging event. Others who are losing a loved one, cherish the last moments they have together. Even those in the hospital for more minor issues feel the love of the gift, a break in the day, and warmth of the a smile. All feel encouraged tha they are not forgotten in a difficult time.
-                section
-                    img.c-img--circle(src='img/about_families.jpg')
+                section.c-left
+                    div.c-img--circle
+                        img(src='img/about_relief.jpg')
+                    h5 Relief Efforts
+                        span Supported
+                    p Many Individuals who have been through natural disasters or war have lost everything, including personal belonging and family treasures. Love Polaroids is able to help them rebuild emotionally by giving them new keepsakes.
+                section.c-right
+                    div.c-img--circle
+                        img(src='img/about_families.jpg')
                     h5 Families
                         span Advocated
                     p Family photos have been treasured as long as they have been around. Children grow up fast, family members pass away. Life move quickly and celebrating the ones we love is important to family life.
 
-        article.c-screen.c-screeen--sustainability
+            i.fa.fa-4x.fa-arrow-down.c-next
+
+        article.c-screen.u-clearfix.c-screen--short.c-screeen--sustainability
             h2 Sustainability
             p As Love Polaroids looks ahead to continue to lead this effort in the future as an organization, we believe not only does Love Polaroids stand on its own as a cause to be supported but the partnership possibilities with humanitarian efforts around the world are endless as well. From US based organizations to local agencies on the ground in each county, partnership and need is ever-present.
+            i.fa.fa-4x.fa-arrow-down.c-next
 
-        article.c-screen.c-screen--story
+        article.c-screen.u-clearfix.c-screen--story
             aside.c-screen__sidebar
                 h2 The Story
                 p As a nonprofit consultant, in the summer of 2013, Ceallaigh Anderson had the privilege of traveling to Rwanda as the logistics coordinator for a leadership speaking team. 
@@ -81,11 +101,14 @@ html(lang="en")
                 span - Ceallaigh Anderson
             p Ceallaigh (pronounced Kelly) has worked in nonprofits for over 15 years in a wide variety of positions and sectors including fundraising, programming, event planning, administration, and now serves as a consultant to many nonprofit organizations in the Twin Cities. As well, she travels often overseas leading teams in various leadership activities. In addition to her consulting, Ceallaigh is a Higher Education advisor and administrator for a world-renowned doctoral leadershi program. With a background and education in Arts Administration (MA) and Experiential/Adventure Education and Art Therapy (BA) Ceallaigh is a perfect leader for Love Polaroids. Ceallaigh is also passionate about running, the arts, the outdoors, fighting for the oppressed, orphan care, organic farming, and is the mother to two future philanthropists.
 
-        article.c-screen.c-screeen--gift
+            i.fa.fa-4x.fa-arrow-down.c-next
+
+        article.c-screen.u-clearfix.c-screen--short.c-screeen--gift
             h2 A Gift
             p A gift so personal is seldom given in humanitarian efforts. We all know how much we love to take and get photos of our families, children, and friends. Even in this digital age in the U.S. where we have access to images anytime, we appreciate and cherish the photographs we get to hold in our hands. Imagine what it would be like to get a picture if you had very few or none. The influence on each person and often their family is significant.
+            i.fa.fa-4x.fa-arrow-down.c-next
 
-        article.c-screen.c-screeen--support
+        article.c-screen.u-clearfix.c-screeen--support
             h2 Your
                 span Support
             p.c-quote All of this could have never been possible with out Polaroid! Will you partner with us? Your support and partnership has the potential to impact the global community for good on an immense scale as well as have profound global PR and social outcomes
@@ -98,11 +121,14 @@ html(lang="en")
             h3 The Need
             p Our greatest need to be able to continue Love Polaroids is resources - funding for travel costs and Polaroid equipment. To stay in line with our mission to celebrate all people groups and serve those in under-resourced communities, we strategically chose travel locations in 3 different continents - South America, Asia, and Africa. All are on the list of least developed and most impoverished in the world. Strategically we will travel to remote areas where electricity and especially photographs are scarce.
 
-        article.c-screen.c-screeen--donate
+            i.fa.fa-4x.fa-arrow-down.c-next
+
+        article.c-screen.u-clearfix.c-screen--short.c-screeen--donate
             h2 Donate
             p We are in the process of getting our 501(c)3 status to be able to accept tax-deductible donations. We will have a link to donate soon! As well, all profits from sales of Ceallaigh Anderson's Rodan + Fields skin care business goes to Print the Love. Purchases are just made online and shipped directly to you: <a href="https://canderson11.myrandf.com/" target="_blank">canderson11.myrandf.com</a>
+            i.fa.fa-4x.fa-arrow-down.c-next
 
-        article.c-screen.c-screeen--contact
+        article.c-screen.u-clearfix.c-screen--short.c-screeen--contact
             h2 Contact
             a(href='mailto:ceallaigh@printthelove.org', target='_blank') ceallaigh@printthelove.org
 

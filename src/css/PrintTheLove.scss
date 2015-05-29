@@ -50,5 +50,124 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: BebasNeue;
+    font-weight: normal;
     text-transform: uppercase;
+}
+
+.c-logo {
+    display: block;
+    margin: 0 auto;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.c-nav {
+    background: black;
+    color: white;
+    font-family: BebasNeue;
+    height: 50px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+    .c-nav__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .c-nav__list__item {
+            float: left;
+        }
+
+$padding: 30px;
+
+.c-screen {
+    padding: $padding;
+    padding-bottom: 100px;
+    position: relative;
+
+    i {
+        bottom: 20px;
+        cursor: pointer;
+        left: calc(50% - 30px);
+        position: absolute;
+    }
+}
+
+.c-screen--short {
+    height: auto !important;
+}
+
+.c-screen--about {
+    $color: #ED2224;
+    header {
+        background: $color;
+        color: white;
+        margin: -$padding;
+        margin-bottom: $padding;
+        min-height: 140px;
+        padding: $padding;
+
+        h1 {
+            font-size: 6em;
+            float: left;
+            margin: 0;
+            margin-right: $padding;
+        }
+
+        p {
+            margin: 5px;
+        }
+    }
+
+    section {
+        float: left;
+        width: calc(50% - #{$padding / 2});
+
+        &.c-left  { margin-right: $padding / 2; }
+        &.c-right { margin-left:  $padding / 2; }
+    }
+
+        h3 {
+            color: $color;
+            font-size: 3em;
+            margin: 10px 0;
+        }
+
+    aside {
+        float: left;
+        margin-top: $padding;
+
+        $imageSize: 150px;
+        .c-img--circle {
+            border-radius: $imageSize / 2;
+            float: left;
+            height: $imageSize;
+            margin-right: $padding;
+            overflow: hidden;
+            width: $imageSize;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        h5 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+
+            span {
+                color: $color;
+                display: block;
+                font-size: .75em;
+                text-transform: capitalize;
+            }
+        }
+
+        p {
+            font-size: .85em;
+        }
+    }
 }
