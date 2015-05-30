@@ -1,14 +1,14 @@
-@import '../../bower_components/bourbon/dist/_bourbon';
+@import '../../../bower_components/bourbon/dist/_bourbon';
 
 @font-face {
     font-family: BebasNeue;
-    src: url('font/BebasNeueRegular.otf') format('opentype');
+    src: url('/dist/fonts/BebasNeueRegular.otf') format('opentype');
 }
 
 @font-face {
     font-family: BebasNeue;
     font-weight: bold;
-    src: url('font/BebasNeueBold.otf') format('opentype');
+    src: url('/dist/fonts/BebasNeueBold.otf') format('opentype');
 }
 
 * { @include box-sizing(border-box); }
@@ -96,7 +96,7 @@ $padding: 30px;
 }
 
 .c-screen--short {
-    height: auto !important;
+    min-height: initial !important;
 }
 
 .c-screen--about {
@@ -154,6 +154,7 @@ $padding: 30px;
         }
 
         h5 {
+            color: #434241;
             font-size: 2em;
             font-weight: bold;
             margin: 10px 0;
@@ -168,6 +169,15 @@ $padding: 30px;
 
         p {
             font-size: .85em;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
     }
+
+    .c-next { color: $color; }
+}
+
+.c-screen--sustainability {
+    background: #434241;
+    color: white;
 }

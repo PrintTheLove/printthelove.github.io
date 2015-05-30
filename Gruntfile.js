@@ -17,9 +17,7 @@ module.exports = function(grunt) {
         clean: [
             'favicon.ico',
             'index.html',
-            'PrintTheLove*.css',
-            'PrintTheLove*.js',
-            'img'
+            'dist'
         ],
         copy: {
             favicon: {
@@ -35,7 +33,12 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: 'bower_components/components-font-awesome/fonts/*',
-                    dest: 'build/fonts/'
+                    dest: 'dist/fonts/'
+                }, {
+                    expand: true,
+                    flatten: true,
+                    src: 'src/fonts',
+                    dest: 'dist/fonts/'
                 }]
             },
             images: {
@@ -43,7 +46,7 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: 'src/img/*',
-                    dest: 'img/'
+                    dest: 'dist/img/'
                 }]
             }
         },
@@ -52,15 +55,18 @@ module.exports = function(grunt) {
                 algorithm: 'md5',
                 length: 8
             },
-            images: { src: 'img/*' },
-            js:     { src: '*.js' },
-            css:    { src: '*.css' }
+            images: { src: 'dist/img/*' },
+            js:     { src: 'dist/js/*' },
+            css:    { src: 'dist/css/*' }
         },
         jade: {
             index: {
                 files: {
                     'index.html': 'src/index.jade'
                 }
+            },
+            options: {
+                pretty: true
             }
         },
         sass: {
@@ -69,13 +75,16 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 src: 'src/css/PrintTheLove.scss',
-                dest: 'PrintTheLove.css'
+                dest: 'dist/css/PrintTheLove.css'
             }
         },
         usemin: {
             html: ['index.html']
         },
         useminPrepare: {
+            options: {
+                dest: '.'
+            },
             src: ['index.html']
         },
         watch: {

@@ -9,10 +9,10 @@ html(lang="en")
 
         title Print the Love
 
-        // build:css PrintTheLove.min.css
-        link(rel="stylesheet", href="bower_components/normalize.css/normalize.css")
-        link(rel="stylesheet", href="bower_components/components-font-awesome/css/font-awesome.css")
-        link(rel="stylesheet", href="PrintTheLove.css")
+        // build:css(.) /dist/css/PrintTheLove.min.css
+        link(rel="stylesheet", href="/bower_components/normalize.css/normalize.css")
+        link(rel="stylesheet", href="/bower_components/components-font-awesome/css/font-awesome.css")
+        link(rel="stylesheet", href="/dist/css/PrintTheLove.css")
         // endbuild
 
     body.u-clearfix
@@ -28,7 +28,7 @@ html(lang="en")
                 //-li.c-nav__list__item(data-target='contact') Contact
 
         article.c-screen.u-clearfix.c-screen--title
-            img.c-logo(src='img/PrintTheLove.gif')
+            img.c-logo(src='/src/img/PrintTheLove.gif')
             i.fa.fa-4x.fa-arrow-down.c-next
 
         article.c-screen.u-clearfix.c-screen--about
@@ -52,25 +52,25 @@ html(lang="en")
             aside.u-clearfix
                 section.c-left
                     div.c-img--circle
-                        img(src='img/about_children.jpg')
+                        img(src='/src/img/about_children.jpg')
                     h5 Children
                         span Served
                     p Children in many under-resourced communities are marginalized and often not celebrated for who they are. We want to change that! Self-worth is important for emotional and social development. Very few children get school photos taken or have any record of their childhood. As well, if a child were to be lost or taken, there would be a photograph to help find him or her.
                 section.c-right
                     div.c-img--circle
-                        img(src='img/about_hospitalized.jpg')
+                        img(src='/src/img/about_hospitalized.jpg')
                     h5 Hospitalized
                         span Encouraged
                     p New mothers in maternity wards around the globe rarely have access to photographs of their newborns and this lifechanging event. Others who are losing a loved one, cherish the last moments they have together. Even those in the hospital for more minor issues feel the love of the gift, a break in the day, and warmth of the a smile. All feel encouraged tha they are not forgotten in a difficult time.
                 section.c-left
                     div.c-img--circle
-                        img(src='img/about_relief.jpg')
+                        img(src='/src/img/about_relief.jpg')
                     h5 Relief Efforts
                         span Supported
                     p Many Individuals who have been through natural disasters or war have lost everything, including personal belonging and family treasures. Love Polaroids is able to help them rebuild emotionally by giving them new keepsakes.
                 section.c-right
                     div.c-img--circle
-                        img(src='img/about_families.jpg')
+                        img(src='/src/img/about_families.jpg')
                     h5 Families
                         span Advocated
                     p Family photos have been treasured as long as they have been around. Children grow up fast, family members pass away. Life move quickly and celebrating the ones we love is important to family life.
@@ -88,7 +88,7 @@ html(lang="en")
                 p As a nonprofit consultant, in the summer of 2013, Ceallaigh Anderson had the privilege of traveling to Rwanda as the logistics coordinator for a leadership speaking team. 
                 p While there she was able to travel to small towns and villages, schools, hospitals, churches, a prison, and engage with the rich and the poor, from politicians to the homeless. And one thing was true across the board. Everyone loved to talk with her and have their picture taken. But of course it was the eagerness of the children that had the most impact on her. As soon as she took a picture, each child always wanted to look at the back of her digital camera to see themselves or their family and friends. She desperately wanted to be able to print one out and give it to them! 
                 p Thus Love Polaroids was born! Polaroids always spread so much love and smiles. She vowed to be back the following year, ready to print the love.
-            img(src='img/story.jpg')
+            img(src='/src/img/story.jpg')
 
             h4 10 Days in the Land 1000 Hills.<br>1 Encouraging Photographer.<br>1000 Photo Gifts.<br>Life Long Treasures of Love.
             p Ceallaigh travelled back to Rwanda the following year in 2014, during the 20th anniversary of the genocide with camera in tow as she had promised to herself. She raised funds through crowdfunding and brought two Polaroid cameras (Z340 and Z2300) and film. She was able to give away 1,000 Polaroid gifts to people who most likely have never had a printed photo of themselves - a treasure that they will also most likely keep for the rest of their lives. It was a simple small gift to say you matter to each person, child, new mother, or family she encountered. The reactions of the people were incredible! The project was a complete success!
@@ -132,9 +132,9 @@ html(lang="en")
             h2 Contact
             a(href='mailto:ceallaigh@printthelove.org', target='_blank') ceallaigh@printthelove.org
 
-        // build:js PrintTheLove.min.js
-        script(src="bower_components/jquery/dist/jquery.js")
-        script(src="src/PrintTheLove.js")
+        // build:js(.) /dist/js/PrintTheLove.min.js
+        script(src="/bower_components/jquery/dist/jquery.js")
+        script(src="/src/PrintTheLove.js")
         // endbuild
         script.
             //- Google Analytics
