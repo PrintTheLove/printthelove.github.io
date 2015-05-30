@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     flatten: true,
-                    src: 'src/fonts',
+                    src: 'src/fonts/*',
                     dest: 'dist/fonts/'
                 }]
             },
