@@ -1,0 +1,277 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url('/dist/fonts/BebasNeueRegular.otf') format('opentype'); }
+
+@font-face {
+  font-family: BebasNeue;
+  font-weight: bold;
+  src: url('/dist/fonts/BebasNeueBold.otf') format('opentype'); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-size: 14px; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.u-clearfix:before, .u-clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.u-clearfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.u-clearfix {
+  *zoom: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: BebasNeue;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 80px;
+  margin: 0; }
+
+h3 {
+  font-size: 40px;
+  margin: 0; }
+
+h5 {
+  font-size: 30px; }
+
+.c-logo {
+  display: block;
+  max-height: 80%;
+  max-width: 80%;
+  position: absolute; }
+
+.c-nav {
+  background: black;
+  color: white;
+  font-family: BebasNeue;
+  height: 50px;
+  text-transform: uppercase;
+  width: 100%; }
+
+.c-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.c-nav__list__item {
+  float: left; }
+
+.c-screen {
+  padding: 30px;
+  padding-bottom: 100px;
+  position: relative; }
+  .c-screen i {
+    bottom: 20px;
+    cursor: pointer;
+    left: calc(50% - 30px);
+    position: absolute; }
+
+.c-screen--short {
+  min-height: initial !important; }
+
+.c-screen--about header {
+  background: #ED2224;
+  color: white;
+  margin: -30px;
+  margin-bottom: 30px;
+  min-height: 140px;
+  padding: 30px; }
+  .c-screen--about header h1 {
+    font-size: 6em;
+    float: left;
+    margin: 0;
+    margin-right: 30px; }
+    @media (max-width: 940px) {
+      .c-screen--about header h1 {
+        float: none; } }
+  .c-screen--about header p {
+    font-size: 16px;
+    margin: 5px; }
+.c-screen--about section {
+  float: left;
+  width: calc(50% - 15px); }
+  .c-screen--about section.c-left {
+    margin-right: 15px; }
+  .c-screen--about section.c-right {
+    margin-left: 15px; }
+  @media (max-width: 640px) {
+    .c-screen--about section {
+      float: none;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-top: 30px;
+      width: 100%; } }
+.c-screen--about h3 {
+  color: #ED2224;
+  margin: 10px 0; }
+.c-screen--about aside {
+  float: left;
+  margin-top: 30px; }
+  .c-screen--about aside .c-img--circle {
+    border-radius: 75px;
+    float: left;
+    height: 150px;
+    margin-right: 30px;
+    overflow: hidden;
+    width: 150px; }
+    .c-screen--about aside .c-img--circle img {
+      height: 100%; }
+  .c-screen--about aside h5 {
+    color: #434241;
+    font-weight: bold;
+    margin: 10px 0; }
+    .c-screen--about aside h5 span {
+      color: #ED2224;
+      display: block;
+      font-size: 0.75em;
+      text-transform: capitalize; }
+  .c-screen--about aside p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  @media (max-width: 750px) {
+    .c-screen--about aside section {
+      clear: both;
+      float: none;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-top: 30px;
+      min-height: 150px;
+      width: 100%; } }
+.c-screen--about .c-next {
+  color: #ED2224; }
+
+.c-screen--sustainability {
+  background: #434241;
+  color: white; }
+  .c-screen--sustainability h2 {
+    margin: 0; }
+
+.c-screen--story {
+  padding-left: calc(30% + 30px); }
+  .c-screen--story .c-screen__sidebar {
+    background: #F599B8;
+    bottom: 0;
+    color: white;
+    float: left;
+    left: 0;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    min-width: 220px; }
+    .c-screen--story .c-screen__sidebar h2 {
+      margin: 0; }
+  @media (max-width: 750px) {
+    .c-screen--story {
+      padding-left: 30px; }
+      .c-screen--story .c-screen__sidebar {
+        position: initial;
+        bottom: initial;
+        float: none;
+        left: initial;
+        margin: -30px;
+        margin-bottom: 30px;
+        width: calc(100% + 60px); } }
+  .c-screen--story img {
+    margin-bottom: 30px;
+    width: 100%; }
+  .c-screen--story h3 {
+    color: #F599B8;
+    margin: 0; }
+    .c-screen--story h3 span {
+      color: #434241;
+      display: block; }
+  .c-screen--story section {
+    float: left;
+    width: calc(50% - 15px); }
+    .c-screen--story section:first-of-type {
+      margin-right: 30px; }
+    @media (max-width: 640px) {
+      .c-screen--story section {
+        float: none;
+        margin-right: 0 !important;
+        width: 100%; }
+        .c-screen--story section img {
+          margin-bottom: 0; }
+        .c-screen--story section h3 {
+          margin-top: 30px; } }
+  .c-screen--story .c-next {
+    color: #F599B8; }
+
+.c-screen--gift {
+  background: #F26921;
+  color: white; }
+
+.c-screen--support {
+  padding-left: 50%; }
+  .c-screen--support figure {
+    bottom: 100px;
+    float: left;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    width: 50%; }
+    .c-screen--support figure img {
+      margin-bottom: 30px;
+      width: 100%; }
+  @media (max-width: 640px) {
+    .c-screen--support {
+      padding-left: 30px; }
+      .c-screen--support figure {
+        bottom: initial;
+        float: none;
+        left: initial;
+        padding: 0;
+        position: initial;
+        top: initial;
+        width: 100%; } }
+  .c-screen--support h2 {
+    color: #F26921; }
+    .c-screen--support h2 span {
+      color: #434241;
+      display: block; }
+  .c-screen--support .c-quote {
+    font-style: italic; }
+  .c-screen--support h3 {
+    color: #F26921;
+    margin-top: 30px; }
+  .c-screen--support .c-next {
+    color: #F26921; }
+
+.c-screen--donate {
+  background: #00A4DF;
+  color: white; }
+
+.c-screen--contact {
+  background: black;
+  color: white; }

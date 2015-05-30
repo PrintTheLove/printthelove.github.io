@@ -19,6 +19,7 @@ html {
 
 body {
     height: 100%;
+    font-size: 14px;
 }
 
 /**
@@ -54,11 +55,25 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 80px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h5 {
+    font-size: 30px;
+}
+
 .c-logo {
     display: block;
-    margin: 0 auto;
     max-height: 80%;
     max-width: 80%;
+    position: absolute;
 }
 
 .c-nav {
@@ -114,9 +129,14 @@ $padding: 30px;
             float: left;
             margin: 0;
             margin-right: $padding;
+
+            @media (max-width: 940px) {
+                float: none;
+            }
         }
 
         p {
+            font-size: 16px;
             margin: 5px;
         }
     }
@@ -127,11 +147,18 @@ $padding: 30px;
 
         &.c-left  { margin-right: $padding / 2; }
         &.c-right { margin-left:  $padding / 2; }
+
+        @media (max-width: 640px) {
+            float: none;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-top: $padding;
+            width: 100%;
+        }
     }
 
         h3 {
             color: $color;
-            font-size: 3em;
             margin: 10px 0;
         }
 
@@ -155,7 +182,6 @@ $padding: 30px;
 
         h5 {
             color: #434241;
-            font-size: 2em;
             font-weight: bold;
             margin: 10px 0;
 
@@ -168,9 +194,21 @@ $padding: 30px;
         }
 
         p {
-            font-size: .85em;
+            font-size: 12px;
             margin-top: 0;
             margin-bottom: 20px;
+        }
+
+        section {
+            @media (max-width: 750px) {
+                clear: both;
+                float: none;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-top: $padding;
+                min-height: $imageSize;
+                width: 100%;
+            }
         }
     }
 
@@ -179,5 +217,157 @@ $padding: 30px;
 
 .c-screen--sustainability {
     background: #434241;
+    color: white;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.c-screen--story {
+    $color: #F599B8;
+    $sidebar-width: 30%;
+    padding-left: calc(#{$sidebar-width} + #{$padding});
+
+    .c-screen__sidebar {
+        background: $color;
+        bottom: 0;
+        color: white;
+        float: left;
+        left: 0;
+        padding: $padding;
+        position: absolute;
+        top: 0;
+        width: $sidebar-width;
+        min-width: 220px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 750px) {
+        padding-left: $padding;
+
+        .c-screen__sidebar {
+            position: initial;
+            bottom: initial;
+            float: none;
+            left: initial;
+            margin: -$padding;
+            margin-bottom: $padding;
+            width: calc(100% + #{$padding * 2});
+        }
+    }
+
+    img {
+        margin-bottom: $padding;
+        width: 100%;
+    }
+
+    h3 {
+        color: $color;
+        margin: 0;
+
+        span {
+            color: #434241;
+            display: block;
+        }
+    }
+
+    section {
+        float: left;
+        width: calc(50% - #{$padding / 2});
+
+        &:first-of-type {
+            margin-right: $padding;
+        }
+
+        @media (max-width: 640px) {
+            float: none;
+            margin-right: 0 !important;
+            width: 100%;
+
+            img {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                margin-top: $padding;
+            }
+        }
+    }
+
+    .c-next { color: $color; }
+}
+
+.c-screen--gift {
+    background: #F26921;
+    color: white;
+}
+
+.c-screen--support {
+    $color: #F26921;
+    padding-left: 50%;
+
+    figure {
+        bottom: 100px;
+        float: left;
+        left: 0;
+        margin: 0;
+        overflow: hidden;
+        padding: $padding;
+        position: absolute;
+        top: 0;
+        width: 50%;
+
+        img {
+            margin-bottom: $padding;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding-left: $padding;
+
+        figure {
+            bottom: initial;
+            float: none;
+            left: initial;
+            padding: 0;
+            position: initial;
+            top: initial;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        color: $color;
+
+        span {
+            color: #434241;
+            display: block;
+        }
+    }
+
+    .c-quote {
+        font-style: italic;
+    }
+
+    h3 {
+        color: $color;
+        margin-top: $padding;
+    }
+
+    .c-next { color: $color; }
+}
+
+.c-screen--donate {
+    background: #00A4DF;
+    color: white;
+}
+
+.c-screen--contact {
+    background: black;
     color: white;
 }

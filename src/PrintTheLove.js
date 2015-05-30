@@ -21,7 +21,8 @@ function renderScreens() {
     screenHeight = $(window).innerHeight();
     $('.c-screen').css('min-height', screenHeight);
     logo.css({
-        marginTop: screenHeight / 2 - logo.outerHeight() / 2 - 30
+        top: screenHeight / 2 - logo.outerHeight() / 2,
+        left: 'calc(50% - ' + logo.outerWidth() / 2 + 'px)'
     });
 }
 
