@@ -17,16 +17,6 @@ html(lang="en")
 
     body.u-clearfix
 
-        //-nav.c-nav
-            //-ul.c-nav__list
-                //-li.c-nav__list__item(data-target='title') Home
-                //-li.c-nav__list__item(data-target='about') Print the Love
-                //-li.c-nav__list__item(data-target='story') The Story
-                //-li.c-nav__list__item(data-target='gift') A Gift
-                //-li.c-nav__list__item(data-target='support') Your Support
-                //-li.c-nav__list__item(data-target='donate') Donate
-                //-li.c-nav__list__item(data-target='contact') Contact
-
         article.c-screen.u-clearfix.c-screen--title
             img.c-logo(src='/dist/img/PrintTheLove.gif')
             i.fa.fa-4x.fa-arrow-down.c-next
@@ -111,13 +101,19 @@ html(lang="en")
             i.fa.fa-4x.fa-arrow-down.c-next
 
         article.c-screen.u-clearfix.c-screen--support
+
+            figure.c-images--desktop
+                img(src='/dist/img/support_1.jpg')
+                img(src='/dist/img/support_2.jpg')
+
             h2 Your
                 span Support
             p.c-quote All of this could have never been possible with out Polaroid! Will you partner with us? Your support and partnership has the potential to impact the global community for good on an immense scale as well as have profound global PR and social outcomes
 
-            figure
+            figure.c-images--mobile
                 img(src='/dist/img/support_1.jpg')
                 img(src='/dist/img/support_2.jpg')
+
 
             h3 Working together we can do more
             div.c-columns

@@ -308,36 +308,34 @@ $padding: 30px;
 
 .c-screen--support {
     $color: #F26921;
-    padding-left: 50%;
 
     figure {
-        bottom: 100px;
-        float: left;
-        left: 0;
         margin: 0;
-        overflow: hidden;
-        padding: $padding;
-        position: absolute;
-        top: 0;
-        width: 50%;
+
+        &.c-images--desktop {
+            float: left;
+            margin-right: $padding;
+            margin-bottom: $padding;
+            width: 40%;
+        }
+
+        &.c-images--mobile {
+            display: none;
+            width: 100%;
+        }
+
+        @media (max-width: 640px) {
+            &.c-images--desktop { display: none; }
+            &.c-images--mobile  { display: block; }
+        }
 
         img {
             margin-bottom: $padding;
             width: 100%;
-        }
-    }
 
-    @media (max-width: 640px) {
-        padding-left: $padding;
-
-        figure {
-            bottom: initial;
-            float: none;
-            left: initial;
-            padding: 0;
-            position: initial;
-            top: initial;
-            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
