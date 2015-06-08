@@ -252,20 +252,20 @@ h5 {
     .c-screen--support figure img:last-child {
       margin-bottom: 0; }
 .c-screen--support h2 {
-  color: #F26921; }
+  color: #52bf90; }
   .c-screen--support h2 span {
     color: #434241;
     display: block; }
 .c-screen--support .c-quote {
   font-style: italic; }
 .c-screen--support h3 {
-  color: #F26921;
+  color: #52bf90;
   margin-top: 30px; }
 .c-screen--support .c-next {
-  color: #F26921; }
+  color: #52bf90; }
 
 .c-screen--donate {
-  background: #c3EEE7;
+  background: #80ffaf;
   color: white; }
 
 .c-screen--contact {
