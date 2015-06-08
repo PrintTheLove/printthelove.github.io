@@ -96,7 +96,7 @@ h5 {
   min-height: initial !important; }
 
 .c-screen--about header {
-  background: #ED2224;
+  background: #fe8181;
   color: white;
   margin: -30px;
   margin-bottom: 30px;
@@ -128,7 +128,7 @@ h5 {
       margin-top: 30px;
       width: 100%; } }
 .c-screen--about h3 {
-  color: #ED2224;
+  color: #fe8181;
   margin: 10px 0; }
 .c-screen--about aside {
   float: left;
@@ -147,7 +147,7 @@ h5 {
     font-weight: bold;
     margin: 10px 0; }
     .c-screen--about aside h5 span {
-      color: #ED2224;
+      color: #fe8181;
       display: block;
       font-size: 0.75em;
       text-transform: capitalize; }
@@ -165,10 +165,10 @@ h5 {
       min-height: 150px;
       width: 100%; } }
 .c-screen--about .c-next {
-  color: #ED2224; }
+  color: #fe8181; }
 
 .c-screen--sustainability {
-  background: #434241;
+  background: #fe2e2e;
   color: white; }
   .c-screen--sustainability h2 {
     margin: 0; }
@@ -176,7 +176,7 @@ h5 {
 .c-screen--story {
   padding-left: calc(30% + 30px); }
   .c-screen--story .c-screen__sidebar {
-    background: #F599B8;
+    background: #fe5757;
     bottom: 0;
     color: white;
     float: left;
@@ -203,7 +203,7 @@ h5 {
     margin-bottom: 30px;
     width: 100%; }
   .c-screen--story h3 {
-    color: #F599B8;
+    color: #fe5757;
     margin: 0; }
     .c-screen--story h3 span {
       color: #434241;
@@ -223,10 +223,10 @@ h5 {
         .c-screen--story section h3 {
           margin-top: 30px; } }
   .c-screen--story .c-next {
-    color: #F599B8; }
+    color: #fe5757; }
 
 .c-screen--gift {
-  background: #F26921;
+  background: #52bf90;
   color: white; }
 
 .c-screen--support figure {
@@ -265,7 +265,7 @@ h5 {
   color: #F26921; }
 
 .c-screen--donate {
-  background: #00A4DF;
+  background: #c3EEE7;
   color: white; }
 
 .c-screen--contact {
