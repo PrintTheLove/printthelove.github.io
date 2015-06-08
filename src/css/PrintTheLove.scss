@@ -114,32 +114,18 @@ $padding: 30px;
     min-height: initial !important;
 }
 
+.c-screen--print {
+    background: #fe8181;
+    color: white;
+
+    h1 {
+        font-size: 6em;
+        margin: 0;
+    }
+}
+
 .c-screen--about {
     $color: #fe8181;
-    header {
-        background: $color;
-        color: white;
-        margin: -$padding;
-        margin-bottom: $padding;
-        min-height: 140px;
-        padding: $padding;
-
-        h1 {
-            font-size: 6em;
-            float: left;
-            margin: 0;
-            margin-right: $padding;
-
-            @media (max-width: 940px) {
-                float: none;
-            }
-        }
-
-        p {
-            font-size: 16px;
-            margin: 5px;
-        }
-    }
 
     section {
         float: left;

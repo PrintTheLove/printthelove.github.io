@@ -95,24 +95,13 @@ h5 {
 .c-screen--short {
   min-height: initial !important; }
 
-.c-screen--about header {
+.c-screen--print {
   background: #fe8181;
-  color: white;
-  margin: -30px;
-  margin-bottom: 30px;
-  min-height: 140px;
-  padding: 30px; }
-  .c-screen--about header h1 {
+  color: white; }
+  .c-screen--print h1 {
     font-size: 6em;
-    float: left;
-    margin: 0;
-    margin-right: 30px; }
-    @media (max-width: 940px) {
-      .c-screen--about header h1 {
-        float: none; } }
-  .c-screen--about header p {
-    font-size: 16px;
-    margin: 5px; }
+    margin: 0; }
+
 .c-screen--about section {
   float: left;
   width: calc(50% - 15px); }
