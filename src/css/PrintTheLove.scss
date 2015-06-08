@@ -115,7 +115,7 @@ $padding: 30px;
 }
 
 .c-screen--about {
-    $color: #ED2224;
+    $color: #fe8181;
     header {
         background: $color;
         color: white;
@@ -216,7 +216,7 @@ $padding: 30px;
 }
 
 .c-screen--sustainability {
-    background: #434241;
+    background: #fe2e2e;
     color: white;
 
     h2 {
@@ -225,7 +225,7 @@ $padding: 30px;
 }
 
 .c-screen--story {
-    $color: #F599B8;
+    $color: #fe5757;
     $sidebar-width: 30%;
     padding-left: calc(#{$sidebar-width} + #{$padding});
 
@@ -302,7 +302,7 @@ $padding: 30px;
 }
 
 .c-screen--gift {
-    background: #F26921;
+    background: #52bf90;
     color: white;
 }
 
@@ -361,7 +361,7 @@ $padding: 30px;
 }
 
 .c-screen--donate {
-    background: #00A4DF;
+    background: #c3EEE7;
     color: white;
 }
 
