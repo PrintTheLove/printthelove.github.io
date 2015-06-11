@@ -48,6 +48,14 @@ module.exports = function(grunt) {
                     src: 'src/img/*',
                     dest: 'dist/img/'
                 }]
+            },
+            logo: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: 'src/img/PrintTheLove.gif',
+                    dest: 'dist/img/'
+                }]
             }
         },
         filerev: {
@@ -114,6 +122,7 @@ module.exports = function(grunt) {
         'cssmin:generated',
         'uglify:generated',
         'filerev',
+        'copy:logo',
         'usemin'
     ]);
 

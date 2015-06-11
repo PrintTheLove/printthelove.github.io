@@ -10,12 +10,14 @@ html(lang="en")
         title Print the Love
 
         - var DESCRIPTION = 'Print the Love is about more than just giving away a photograph to those who have none. It is about hope, love, and encouragement. It is about uplifting others, helping them see the beauty in themselves regardless of their circumstance.'
+        - var URL = 'http://PrintTheLove.org'
+        - var IMG = URL + '/dist/img/PrintTheLove.gif'
 
         meta(name='description',          content='#{DESCRIPTION}')
         meta(property='og:type',          content='website')
-        meta(property='og:url',           content='http://PrintTheLove.org')
+        meta(property='og:url',           content='#{URL}')
         meta(property='og:title',         content='Print the Love')
-        meta(property='og:image',         content='http://PrintTheLove.org/dist/img/PrintTheLove.gif')
+        meta(property='og:image',         content='#{IMG}')
         meta(property='og:description',   content='#{DESCRIPTION}')
 
         // build:css(.) /dist/css/PrintTheLove.min.css
