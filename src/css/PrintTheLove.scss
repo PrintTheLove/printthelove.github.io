@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    color: #5555D3;
+    color: #fe8181;
 }
 
 /**
@@ -125,6 +125,11 @@ $padding: 30px;
     h1 {
         font-size: 6em;
         margin: 0;
+
+        span {
+            display: block;
+            font-size: 40px;
+        }
     }
 }
 

@@ -20,7 +20,7 @@ body {
   font-size: 14px; }
 
 a {
-  color: #5555D3; }
+  color: #fe8181; }
 
 /**
  * For modern browsers
@@ -104,6 +104,9 @@ h5 {
   .c-screen--print h1 {
     font-size: 6em;
     margin: 0; }
+    .c-screen--print h1 span {
+      display: block;
+      font-size: 40px; }
 
 .c-screen--about section {
   float: left;
