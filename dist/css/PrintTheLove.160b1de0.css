@@ -19,6 +19,9 @@ body {
   height: 100%;
   font-size: 14px; }
 
+a {
+  color: #5555D3; }
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -165,7 +168,7 @@ h5 {
 .c-screen--story {
   padding-left: calc(30% + 30px); }
   .c-screen--story .c-screen__sidebar {
-    background: #fe5757;
+    background: #f9d3c3;
     bottom: 0;
     color: white;
     float: left;
@@ -192,7 +195,7 @@ h5 {
     margin-bottom: 30px;
     width: 100%; }
   .c-screen--story h3 {
-    color: #fe5757;
+    color: #f9d3c3;
     margin: 0; }
     .c-screen--story h3 span {
       color: #434241;
@@ -212,10 +215,10 @@ h5 {
         .c-screen--story section h3 {
           margin-top: 30px; } }
   .c-screen--story .c-next {
-    color: #fe5757; }
+    color: #f9d3c3; }
 
 .c-screen--gift {
-  background: #52bf90;
+  background: #d0e7c2;
   color: white; }
 
 .c-screen--support figure {
@@ -241,22 +244,22 @@ h5 {
     .c-screen--support figure img:last-child {
       margin-bottom: 0; }
 .c-screen--support h2 {
-  color: #52bf90; }
+  color: #d0e7c2; }
   .c-screen--support h2 span {
     color: #434241;
     display: block; }
 .c-screen--support .c-quote {
   font-style: italic; }
 .c-screen--support h3 {
-  color: #52bf90;
+  color: #d0e7c2;
   margin-top: 30px; }
 .c-screen--support .c-next {
-  color: #52bf90; }
+  color: #d0e7c2; }
 
 .c-screen--donate {
-  background: #80ffaf;
+  background: #52bf90;
   color: white; }
 
 .c-screen--contact {
-  background: black;
+  background: #C3EEE7;
   color: white; }

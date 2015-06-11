@@ -22,6 +22,10 @@ body {
     font-size: 14px;
 }
 
+a {
+    color: #5555D3;
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -211,7 +215,7 @@ $padding: 30px;
 }
 
 .c-screen--story {
-    $color: #fe5757;
+    $color: #f9d3c3;
     $sidebar-width: 30%;
     padding-left: calc(#{$sidebar-width} + #{$padding});
 
@@ -288,12 +292,12 @@ $padding: 30px;
 }
 
 .c-screen--gift {
-    background: #52bf90;
+    background: #d0e7c2;
     color: white;
 }
 
 .c-screen--support {
-    $color: #52bf90;
+    $color: #d0e7c2;
 
     figure {
         margin: 0;
@@ -347,11 +351,11 @@ $padding: 30px;
 }
 
 .c-screen--donate {
-    background: #80ffaf;
+    background: #52bf90;
     color: white;
 }
 
 .c-screen--contact {
-    background: black;
+    background: #C3EEE7;
     color: white;
 }
