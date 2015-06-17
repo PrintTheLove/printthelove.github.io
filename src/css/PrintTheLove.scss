@@ -106,7 +106,17 @@ $padding: 30px;
     padding-bottom: 100px;
     position: relative;
 
-    i {
+    .social {
+        color: white;
+        font-size: 56px;
+        margin-left: 20px;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+    .fa-arrow-down {
         bottom: 20px;
         cursor: pointer;
         left: calc(50% - 30px);

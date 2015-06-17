@@ -89,7 +89,13 @@ h5 {
   padding: 30px;
   padding-bottom: 100px;
   position: relative; }
-  .c-screen i {
+  .c-screen .social {
+    color: white;
+    font-size: 56px;
+    margin-left: 20px; }
+    .c-screen .social:hover {
+      opacity: 0.85; }
+  .c-screen .fa-arrow-down {
     bottom: 20px;
     cursor: pointer;
     left: calc(50% - 30px);
