@@ -106,16 +106,6 @@ $padding: 30px;
     padding-bottom: 100px;
     position: relative;
 
-    .social {
-        color: white;
-        font-size: 56px;
-        margin-left: 20px;
-
-        &:hover {
-            opacity: 0.85;
-        }
-    }
-
     .fa-arrow-down {
         bottom: 20px;
         cursor: pointer;
@@ -123,6 +113,23 @@ $padding: 30px;
         position: absolute;
     }
 }
+
+    .c-social {
+        display: inline-block;
+    }
+        .c-social__link {
+            color: white;
+            font-size: 56px;
+            margin-left: 15px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
 
 .c-screen--short {
     min-height: initial !important;
@@ -225,6 +232,7 @@ $padding: 30px;
     color: white;
 
     h2 {
+        display: inline-block;
         margin: 0;
     }
 }
