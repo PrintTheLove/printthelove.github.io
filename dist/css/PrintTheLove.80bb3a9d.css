@@ -89,17 +89,23 @@ h5 {
   padding: 30px;
   padding-bottom: 100px;
   position: relative; }
-  .c-screen .social {
-    color: white;
-    font-size: 56px;
-    margin-left: 20px; }
-    .c-screen .social:hover {
-      opacity: 0.85; }
   .c-screen .fa-arrow-down {
     bottom: 20px;
     cursor: pointer;
     left: calc(50% - 30px);
     position: absolute; }
+
+.c-social {
+  display: inline-block; }
+
+.c-social__link {
+  color: white;
+  font-size: 56px;
+  margin-left: 15px; }
+  .c-social__link:first-child {
+    margin-left: 0; }
+  .c-social__link:hover {
+    opacity: 0.85; }
 
 .c-screen--short {
   min-height: initial !important; }
@@ -172,6 +178,7 @@ h5 {
   background: #fe2e2e;
   color: white; }
   .c-screen--sustainability h2 {
+    display: inline-block;
     margin: 0; }
 
 .c-screen--story {

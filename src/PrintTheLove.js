@@ -18,6 +18,10 @@ $(document)
     });
 
 function renderScreens() {
+    if (!logo[0].complete || !logo[0].naturalWidth) {
+        setTimeout(renderScreens, 100);
+        return;
+    }
     screenHeight = $(window).innerHeight();
     $('.c-screen').css('min-height', screenHeight);
     logo.css({
