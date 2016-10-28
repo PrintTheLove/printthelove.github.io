@@ -1,11 +1,11 @@
 @font-face {
   font-family: BebasNeue;
-  src: url('/dist/fonts/BebasNeueRegular.otf') format('opentype'); }
+  src: url("/dist/fonts/BebasNeueRegular.otf") format("opentype"); }
 
 @font-face {
   font-family: BebasNeue;
   font-weight: bold;
-  src: url('/dist/fonts/BebasNeueBold.otf') format('opentype'); }
+  src: url("/dist/fonts/BebasNeueBold.otf") format("opentype"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -31,7 +31,8 @@ a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.u-clearfix:before, .u-clearfix:after {
+.u-clearfix:before,
+.u-clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -134,9 +135,11 @@ h5 {
       margin-right: 0 !important;
       margin-top: 30px;
       width: 100%; } }
+
 .c-screen--about h3 {
   color: #fe8181;
   margin: 10px 0; }
+
 .c-screen--about aside {
   float: left;
   margin-top: 30px; }
@@ -156,7 +159,7 @@ h5 {
     .c-screen--about aside h5 span {
       color: #fe8181;
       display: block;
-      font-size: 0.75em;
+      font-size: .75em;
       text-transform: capitalize; }
   .c-screen--about aside p {
     font-size: 12px;
@@ -171,6 +174,7 @@ h5 {
       margin-top: 30px;
       min-height: 150px;
       width: 100%; } }
+
 .c-screen--about .c-next {
   color: #fe8181; }
 
@@ -250,25 +254,27 @@ h5 {
   @media (max-width: 640px) {
     .c-screen--support figure.c-images--desktop {
       display: none; }
-
     .c-screen--support figure.c-images--mobile {
-      display: block; }
- }
+      display: block; } }
   .c-screen--support figure img {
     margin-bottom: 30px;
     width: 100%; }
     .c-screen--support figure img:last-child {
       margin-bottom: 0; }
+
 .c-screen--support h2 {
   color: #d0e7c2; }
   .c-screen--support h2 span {
     color: #434241;
     display: block; }
+
 .c-screen--support .c-quote {
   font-style: italic; }
+
 .c-screen--support h3 {
   color: #d0e7c2;
   margin-top: 30px; }
+
 .c-screen--support .c-next {
   color: #d0e7c2; }
 
