@@ -116,11 +116,16 @@ $padding: 30px;
 
     .c-social {
         display: inline-block;
+
+        + span {
+            margin-top: 30px;
+        }
     }
         .c-social__link {
             color: white;
             font-size: 56px;
             margin-left: 15px;
+            text-decoration: none;
 
             &:first-child {
                 margin-left: 0;
@@ -129,6 +134,10 @@ $padding: 30px;
             &:hover {
                 opacity: 0.85;
             }
+        }
+
+        .c-social__link--text {
+            border-bottom: 2px solid white;
         }
 
 .c-screen--short {

@@ -98,15 +98,21 @@ h5 {
 
 .c-social {
   display: inline-block; }
+  .c-social + span {
+    margin-top: 30px; }
 
 .c-social__link {
   color: white;
   font-size: 56px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  text-decoration: none; }
   .c-social__link:first-child {
     margin-left: 0; }
   .c-social__link:hover {
     opacity: 0.85; }
+
+.c-social__link--text {
+  border-bottom: 2px solid white; }
 
 .c-screen--short {
   min-height: initial !important; }
